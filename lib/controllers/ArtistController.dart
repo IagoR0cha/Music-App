@@ -73,8 +73,8 @@ class ArtistsController extends ChangeNotifier {
     }
   }
 
-  Future<void> edit(String automakerId, Artist artistData) async {
-    var url = Uri.https(Env.FIREBASE_URL, '/artists/$automakerId.json');
+  Future<void> edit(String artistId, Artist artistData) async {
+    var url = Uri.https(Env.FIREBASE_URL, '/artists/$artistId.json');
 
     try {
       await http.put(url, body: jsonEncode({
