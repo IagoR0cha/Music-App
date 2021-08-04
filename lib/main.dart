@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:music_ap/Pages/HomePage.dart';
+import 'package:music_ap/Pages/SignInPage.dart';
 import 'package:music_ap/controllers/ArtistController.dart';
 import 'package:music_ap/controllers/MusicController.dart';
 import 'package:provider/provider.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         theme: ThemeData(
           primarySwatch: Colors.blue,
         ),
-        home: HomePage(),
+        home: SignInPage(),
       ),
     );
   }
